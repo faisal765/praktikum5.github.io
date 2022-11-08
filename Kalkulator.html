@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+        <title>Kakultor</title>
+<head>
+<meta charset=utf-8 />
+<title>Kakultor sederhana </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+<script>
+function kali()
+{
+        num1 = document.getElementById("n1").value;
+        num2 = document.getElementById("n2").value;
+        document.getElementById("hasil").innerHTML = num1 * num2;
+}
+function bagi() 
+{ 
+        num1 = document.getElementById("n1").value;
+        num2 = document.getElementById("n2").value;
+document.getElementById("hasil").innerHTML = num1 / num2;
+}
+function tambah() 
+{ 
+        num1 = document.getElementById("n1").value;
+        num2 = document.getElementById("n2").value;
+document.getElementById("hasil").innerHTML = (parseInt(num1)+parseInt(num2));     
+}
+function kurang() 
+{ 
+        num1 = document.getElementById("n1").value;
+        num2 = document.getElementById("n2").value;
+document.getElementById("hasil").innerHTML = num1 - num2;
+}
+</script>
+</head>
+<body>
+<form>
+Angka pertama: <input type="text" id="n1" /><br>
+Angka terakhir: <input type="text" id="n2" /><br>
+<input type="button" onClick="kali()" Value="kali" />
+<input type="button" onClick="bagi()" Value="bagi" />
+<input type="button" onClick="tambah()" Value="tambah" />
+<input type="button" onClick="kurang()" Value="kurang" />
+</form>
+<p>Hasil : <br>
+<span id = "hasil"></span>
+</p>
+<a href="index.html">Konversi</a>
+</body>
+</html>
